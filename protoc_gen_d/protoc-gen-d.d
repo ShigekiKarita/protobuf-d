@@ -509,15 +509,7 @@ private string toString(Wire wire)
 
 private string moduleName(FileDescriptorProto fileDescriptor)
 {
-    import std.array : empty;
-    import std.path : baseName;
-
-    string moduleName = fileDescriptor.name.baseName(".proto");
-
-    if (!fileDescriptor.package_.empty)
-        moduleName = fileDescriptor.package_ ~ "." ~ moduleName;
-
-    return moduleName.escapeKeywords;
+    return fileDescriptor.name.moduleName;
 }
 
 private string moduleName(string fileName)
