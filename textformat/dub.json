@@ -1,0 +1,22 @@
+{
+    "authors": [
+        "Shigeki Karita"
+    ],
+    "copyright": "Copyright © 2021, Shigeki Karita",
+    "dependencies": {
+        "protobuf:protoc-gen-d": { "path": ".." }
+    },
+    "sourcePaths": ["source", "../protoc_gen_d", "../src"],
+    "importPaths": ["source", "../protoc_gen_d", "../src"],
+    "description": "Protobuf text format library.",
+    "license": "Apache 2.0.",
+    "name": "textformat",
+    "buildTypes": {
+        "unittest": {
+            "buildOptions": ["unittests", "debugMode", "debugInfo"],
+            "versions": ["textformat_test"],
+            "sourcePaths": ["source", "../protoc_gen_d", "../src", "../test/golden"],
+            "importPaths": ["source", "../protoc_gen_d", "../src", "../test/golden"],
+        }
+    }
+}

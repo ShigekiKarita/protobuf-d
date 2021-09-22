@@ -6,7 +6,8 @@
     "mainSourceFile": "protoc-gen-d.d",
     "targetPath": "../build",
     "workingDirectory": "../build",
+    "versions": ["protoc_gen_d_main"],
     "dependencies": {
-        "protobuf": "*"
+        "protobuf": {"path": ".."}
     }
 }

@@ -1,5 +1,7 @@
 module protoc_gen_d;
 
+version (protoc_gen_d_main):
+
 import google.protobuf;
 import google.protobuf.compiler.plugin : CodeGeneratorRequest, CodeGeneratorResponse;
 import google.protobuf.descriptor : DescriptorProto, EnumDescriptorProto, FieldDescriptorProto, FileDescriptorProto,

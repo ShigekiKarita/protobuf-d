@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/textformat
+textformat.so
+textformat.dylib
+textformat.dll
+textformat.a
+textformat.lib
+textformat-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*~
